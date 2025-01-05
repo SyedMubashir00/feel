@@ -1,4 +1,8 @@
+'use client'
+
 import Image from "next/image";
+import Navbar from "@/componenets/Navbar";
+import Footer from "@/componenets/Footer";
 
 export default function Home() {
   return (
@@ -97,8 +101,18 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <div>
+    <div className="flex flex-col w-screen h-screen">
+        <Navbar />
+        
+
+
+        <div className="flex h-[90vh]">
         Pages
+        {/* <div className="text-red-500">This text should be red</div> */}
+
+        </div>
+
+        <Footer />
     </div>
   );
 }
